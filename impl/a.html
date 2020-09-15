@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Aula Remota</title>
+
+    <link rel="stylesheet" type="text/css" href="a.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script src="a.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div id="pagina">
+            <div id="pagina_topo">
+                <div id="lab_disciplina">Disciplina - Aula 4</div>
+                <div id="lab_data">Terça-Feira, 9 de Junho de 2020</div>
+                <div id="barra_aulas">
+                    <div class="aula aula_dada" onclick="on_aula_click(1)" title="Aula 1"></div>
+                    <div class="aula aula_dada" onclick="on_aula_click(2)" title="Aula 2"></div>
+                    <div class="aula aula_dada" onclick="on_aula_click(3)" title="Aula 3"></div>
+                    <div class="aula aula_atual" onclick="on_aula_click(4)" title="Aula 4"></div>
+                    <div class="aula aula_futura" onclick="on_aula_click(5)" title="Aula 5"></div>
+                    <div class="aula aula_futura" onclick="on_aula_click(6)" title="Aula 6"></div>
+                    <div class="aula aula_futura" onclick="on_aula_click(7)" title="Aula 7"></div>
+                    <div class="aula aula_futura" onclick="on_aula_click(8)" title="Aula 8"></div>
+                    <div class="aula aula_futura" onclick="on_aula_click(9)" title="Aula 9"></div>
+                </div>
+            </div>
+            <div id="pagina_janela">
+                <div id="janela_barra">
+                    <button id="btn_add_baloes" onclick="on_btn_add_baloes_click()">
+                        <i class="fa fa-plus"></i>Balões
+                    </button>
+
+                    <button id="btn_add_leitura" onclick="on_btn_add_leitura_click()">
+                        <i class="fa fa-plus"></i>Leitura
+                    </button>
+
+                    <button id="btn_add_quadro" onclick="on_btn_add_quadro_click()">
+                        <i class="fa fa-plus"></i>Quadro
+                    </button>
+
+                    <button id="btn_add_caderno" onclick="on_btn_add_caderno_click()">
+                        <i class="fa fa-plus"></i>Caderno
+                    </button>
+
+                    <button id="btn_add_site" onclick="on_btn_add_site_click()">
+                        <i class="fa fa-plus"></i>Site
+                    </button>
+
+                    <div id="tab_bar">
+                        <div class="tab_header tab_header_active" id="tab_baloes1" onclick="on_tab_click(1)">Balões 1
+                        </div>
+                        <div class="tab_header" onclick="on_tab_click(2)">Balões 2</div>
+                        <div class="tab_header" onclick="on_tab_click(3)">Leitura 1</div>
+                        <div class="tab_header" onclick="on_tab_click(4)">Caderno 1</div>
+                        <div class="tab_header" onclick="on_tab_click(5)">Caderno 2</div>
+                    </div>
+                </div>
+                <div id="janela_conteudo">
+                    <textarea id="conteudo_codigo">Digite algo aqui...</textarea>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="barra_inferior">
+            <div>
+            </div>
+
+            <div style="justify-content: center; align-items: center; display: flex; flex-direction: row;">
+                <button class="botao" id="btn_projetar" onclick="on_btn_projetar_click()">
+                    Projetar
+                </button>
+            </div>
+
+            <div id="barra_inferior_bots">
+                <button id="btn_abrir" onclick="on_btn_abrir_click()">
+                    <i class="fa fa-folder-open"></i>Abrir
+                </button>
+
+                <button id="btn_salvar" onclick="on_btn_salvar_click()">
+                    <i class="fa fa-save"></i>Salvar
+                </button>
+
+                <button id="btn_salvar_nuvens" onclick="on_btn_salvar_nuvens_click()">
+                    <i class="fa fa-cloud"></i>
+                    Salvar nas Nuvens
+                </button>
+
+                <button id="btn_frequencia" onclick="on_btn_frequencia_click()">
+                    <i class="fa fa-tasks"></i>Extrair Frequência
+                </button>
+            </div>
+        </div> <!-- barra inferior -->
+
+
+    </div>
+
+</body>
+
+</html>
