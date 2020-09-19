@@ -38,6 +38,12 @@ function on_btn_add_site_click() {
 
 
 function on_btn_projetar_click() {
+
+    const textArea = document.getElementById("conteudo_codigo")
+    console.log(textArea.innerHTML)
+
+
+
     //alert("on_btn_projetar_click");
     window.open("/projecao", 'PROJEÇÃO', 'width=800,height=600,directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no');
     //'location=no,toolbar=no,width=800,height=600,scrollbars=yes,status=yes');                                         
